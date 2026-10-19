@@ -3,6 +3,8 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.io.File;
+
 public class HomePage {
 //   private By formAuthLink = By.linkText("Form Authentication");
 //   private By dropDownLink = By.linkText("")
@@ -35,5 +37,13 @@ public class HomePage {
     public JavaAlertsPage clickJavaAlertsPage(){
         clickLink("JavaScript Alerts");
         return new JavaAlertsPage(driver);
+    }
+    public FileUploadPage clickFileUploadPage(){
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+    public EntryAdPage clickEntryAdPage(){
+        clickLink("Entry Ad");
+        return new EntryAdPage(driver);
     }
 }
