@@ -20,6 +20,7 @@ public class HomePage {
         return new LoginPage(driver);
     }
     public void clickLink(String linkText){
+
         driver.findElement(By.linkText(linkText)).click();
     }
     public DropDownPage clickDropDown(){
@@ -45,5 +46,13 @@ public class HomePage {
     public EntryAdPage clickEntryAdPage(){
         clickLink("Entry Ad");
         return new EntryAdPage(driver);
+    }
+    public FramesPage clickFramesPage(){
+        clickLink("Frames");
+        return new FramesPage(driver);
+    }
+    public DynamicLoadingPage clickDynamicloadingPage(){
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
     }
 }

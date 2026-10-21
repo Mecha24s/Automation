@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import java.time.Duration;
 import java.util.List;
 
 public class BaseTests {
@@ -22,6 +23,7 @@ public class BaseTests {
         driver.manage().window().maximize();
         driver.get("https://the-internet.herokuapp.com/");
         homepage=new HomePage(driver);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 
 
