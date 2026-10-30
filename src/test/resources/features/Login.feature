@@ -6,6 +6,4 @@ Feature: Login Feature
   Scenario: login Successfully with valid credentials
     Given the user is on the login page
     When the user enters valid username and password and clicks the login button
-    Then the user should be directed to homepag\
-    \
-    =
+    Then the user should be directed to homepag
